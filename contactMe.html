@@ -9,7 +9,7 @@
 		<h2>MENU</h2>
 		<ul class="nav">
 			<li>
-				<a href="#">
+				<a href="index.html">
 					<span>HOME</span>
 				</a>
 			</li>
@@ -32,54 +32,52 @@
 	</div>
 	
 	<div class="main">
-			<p>Temparary Form Place Holder</p>
-	</div>
-	<div>
-		<form id="msgForm" action="#">
-			<div class="form_container">
-				<h1>LEAVE A MESSAGE...</h1>
-				<p>Tell me something about yourself.</p>
-				<div class="row">
-					<div class="col-1">
-						<label for="email"><b>EMAIL</b></label>
+			<form id="msgForm" action="#">
+				<div class="form_container">
+					<h1>LEAVE A MESSAGE...</h1>
+					<p>Tell me something about yourself.</p>
+					<div class="row">
+						<div class="col-1">
+							<label for="email"><b>EMAIL</b></label>
+						</div>
+						<div class="col-2">
+							<input type="email" placeholder=" YOUR EMAIL" name="email" required>
+						</div>
 					</div>
-					<div class="col-2">
-						<input type="email" placeholder="YOUR EMAIL" name="email" required>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-1">
-						<label for="fname"><b>FIRST NAME</b></label>
+					<div class="row">
+						<div class="col-1">
+							<label for="fname"><b>FIRST NAME</b></label>
+						</div>
+						<div class="col-2">
+							<input type="text" placeholder=" YOUR FIRST NAME" name="fname" required>
+						</div>
 					</div>
-					<div class="col-2">
-						<input type="text" placeholder="YOUR FIRST NAME" name="fname" required>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-1">
-						<label for="lname"><b>LAST NAME</b></label>
+					<div class="row">
+						<div class="col-1">
+							<label for="lname"><b>LAST NAME</b></label>
+						</div>
+						<div class="col-2">
+							<input type="text" placeholder=" YOUR LAST NAME" name="lname" required>
+						</div>
 					</div>
-					<div class="col-2">
-						<input type="text" placeholder="YOUR LAST NAME" name="lname" required>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-1">
-						<label for="comment"><b>MESSAGE</b></label>
-					</div>
-					<div class="col-2">
-						<input type="text" placeholder="YOUR FEEDBACK" name="comment" required>
-					</div>
-				</div>
+					<div class="row">
+						<div class="col-1">
+							<label for="comment"><b>MESSAGE</b></label>
+						</div>
+						<div class="col-2">
+							<textarea name="comments" cols="60" rows="6" placeholder="Your message... "></textarea>
 
-				<div class="submit">
-					<input type="submit" value="SUBMIT">
+						</div>
+					</div>
+
+					<div class="submit">
+						<input type="submit" value="SUBMIT">
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
 	</div>
 
 	<script src="validation.cs" type="text/javascript"></script>

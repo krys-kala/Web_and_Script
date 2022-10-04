@@ -96,9 +96,9 @@ body{
 
 .intro{
 	overflow: hidden;
-	margin: 7.5% 2.5% 9% 2.5%;
-	height: 80%;
-	width: 95%;
+	margin: 2em 1em;
+	height: 12em;
+	width: 64em;
 	padding: 20% 0 20% 0;
 	border-radius: 2em;
 	background: #ffffff;
@@ -133,11 +133,11 @@ body{
 }
 
 .container{
-	margin: 9% 2.5% 9% 2.5%;
+	margin: 5em 1em;
 	padding: 10%;
 	background: #ffffff;
-	width: 100%
-	height: 50%;
+	width: 50.75em;
+	height: 25.25em;
 	overflow: hidden;
 	border-radius: 2em;
 }
@@ -157,10 +157,10 @@ body{
 }*/
 
 .container img{
-	float: top right;
+	/*float: top;*/
 	width: 50%;
 	height: 50%;
-	background: #222222;
+	/*background: #222222;*/
 }
 
 .row{
@@ -172,6 +172,12 @@ body{
 	display: flex;
 	margin-bottom: 5%;
 	margin-left: 15em;
+}
+
+.col{
+	/*width: 7em;*/
+	float: left;
+	margin-left: 1em;
 }
 
 
@@ -194,28 +200,39 @@ body{
 	margin-right: 2em;
 }
 
+.container span{
+	margin-left: 10.5em;
+	text-align: right;
+}
+
 @media screen and (max-width: 600px) {
   .col {
-    width: 100%;
+    width: 10em;
   }
 }
 
 /*Formatting the form starts here*/
 .form_container{
-	margin-left: 20%;
+	margin: 2em 1em;
 	padding: 10%;
-	/*border-radius: 5%;*/
+	border-radius: 2em;
 	background-color: #e2e2e2;
 }
 
 /*styling the inputs and text areas*/
-input[type=text], textarea{
-	width: 100%
-	padding: 20%;
-	border: 5% #959595;
-	border-radius: 5%;
+input[type=text], input[type=email]{
+	width: 35em;
+	height: 1em;
+	padding: 1em;
+	border: none;
+	border-radius: 2em;
 	box-sizing: border-box;
 	resize: vertical;
+}
+
+input textarea{
+	width: 15em;
+	padding: 1em;
 }
 
 /*styling the label to display next to the inputs*/
@@ -230,7 +247,7 @@ input[type=submit]{
 	color: #ffffff;
 	padding: 1% 2%;
 	border: none;
-	border-radius: 5%;
+	border-radius: 2em;
 	cursor: pointer;
 	float: right;
 }
