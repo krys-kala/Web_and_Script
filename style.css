@@ -1,93 +1,12 @@
-/* The navigation bar */
-/*.navBar {
-	top: 0;
-	left: 0;
-	width: 20em;
-	height: 100%;
-	z-index: 1;
-	background-color: none;
-	overflow-x: hidden;
-	position: fixed;
-}*/
-
-/* Navbar links */
-/*.navBar a {
-	width: 20em;
-	float: left;
-	text-align: left;
-	padding: 1em 1.5em 1em 2em;
-	background-color: grey;
-	color: white;
-	text-decoration: none;
-	font-size: 2em;
-	}
-*/
-/* Navbar links on mouse-over */
-/*.navBar a:hover {
-	background-color: #000;
-}
-
-.navBar a.split{
-	float: left;
-
-}*/
-
-
-/* Current/active navbar link */
-/*.active {
-	background-color: #04AA6D;
-}*/
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-/*@media screen and (max-width: 500px) {
-	.navbar a {
-	float: none;
-	display: block;
- 	}
-}
-
-.icon{
-	top: 0;
-	left: 0;
-}
-
-.unblocker{
-	width: 100%;
-	height: 3em;
-}
-
-body{
-
-	padding: 0em 1em;
-	margin-left: 1em;
-}
-
-.welcome{
-	text-align: center;
-}
-
-.container_home{
-	padding: 3em 0em 50em 0em;
-}
-
-.about_section{
-	padding: 50em 0em 50em 0em;
-}
-
-img{
-
-	width: 1440px;
-}*/
-
 /*--------------------------------------------------------*/
-/*Colors:
+/*Colors to be used:
 	default background: #E2E2E2
 	hovered background: #959595
 	default font color: #707070
 	selected font color: #FFFFFF
 */
 
-/*reset*/
+/*resetting all to 0*/
 *{
 	margin: 0;
 	padding: 0;
@@ -101,9 +20,10 @@ body{
 
 /*Navigation Bar setup start here*/
 .navBar{
+	overflow: hidden;
 	position: fixed;
 	background: #e2e2e2;
-	width: 20em;
+	width: 20%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -112,26 +32,28 @@ body{
 
 .navBar h2{
 	text-align: center;
-	font-size: 2em;
+	font-size: 150%;
 	text-transform: uppercase;
 	color: #707070;
 	/*background: #959595;*/
 	background: linear-gradient(to right bottom, grey, black);
-	padding: 2em;
+	padding: 16%;
 	font-weight: bold;
 }
 
 .navBar ul li{
-	margin: 1.5em 0; 
+	text-align: center;
+	margin: 25% 0; 
+	padding: 0 2% 5% 0;
 	list-style: none;
 }
 
 .navBar ul li a{
 	color: #707070;
-	padding: 2em 2em;
-	width: 12em;
-	height: 3em;
-	font-size: 1.25em;
+	padding: 1em 1.5em;
+	width: 75%;
+	height: 25%;
+	font-size: 120%;
 	text-align: left;
 	float: left;
 }
@@ -141,16 +63,26 @@ body{
 	height: 3em;*/
 	color: #ffffff;
 	background: #959595;
+	border-radius: 2em;
 	/*margin-left: 2em;*/
-	transition: 0.3s;
+	/*transition: 0.3s;*/
 }
 
+.navBar ul li a:active{
+	background: #959595;
+}
+
+@media screen and (max-width: 600px){
+	.navBar{
+		display: none;
+	}
+}
 /*Navigation Bar setup ends here*/
 
 
 /*Main content setup starts here*/
 .main{
-	margin-left: 20em;
+	margin-left: 20%;
 	padding: 3em;
 	background: linear-gradient(white, grey);
 }
@@ -158,71 +90,206 @@ body{
 .unblocker{
 	margin-top: 0;
 	padding: 0;
-	height: 5em;
-	background: #000000;
+	height: 10%;
+	/*background: #000000;*/
 }
 
 .intro{
-	padding: 15em 0;
+	overflow: hidden;
+	margin: 7.5% 2.5% 9% 2.5%;
+	height: 80%;
+	width: 95%;
+	padding: 20% 0 20% 0;
+	border-radius: 2em;
+	background: #ffffff;
+
 }
 
 .intro h1{
-	font-size: 10em;
+	padding: .5em; 
+	/*font-size: 10em;*/
+	font-size: 400%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .intro a{
-	/*padding: em 0;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*display: inline-block;
+	text-align: center;*/
 	/*margin: 6em 0;*/
-	font-size: 3em;
+	font-size: 100%;
+	color: #959595;
 
 	/*background: #000000;*/
 }
 
 .intro a:hover{
-	color: #959595;
-	margin-left: 20em;
-	transition: 4s;
+	margin-left: 2em;
+	transition: .2s;
 }
 
 .container{
-	margin: 5em 0;
-	padding: 2em;
+	margin: 9% 2.5% 9% 2.5%;
+	padding: 10%;
 	background: #ffffff;
 	width: 100%
-	height: 100%;
+	height: 50%;
+	overflow: hidden;
+	border-radius: 2em;
 }
 
-img{
+.container h2{
+	font-size: 100%;
+}
+
+.container p{
+	font-size: 9em;
+}
+
+/*img{
 	width: 30%;
 	height: 30%;
 	margin-right: 0; 
-}
+}*/
 
 .container img{
 	float: top right;
+	width: 50%;
 	height: 50%;
 	background: #222222;
 }
 
-
-
-.container iframe{
-	
-	height: auto;
-	width: 50%;
-}
 .row{
 	display: flex;
+	margin: 5%;
 }
 
-.col{
-	flex: 50%;
-	height: 50%;
-	padding: 10px;
+.row1{
+	display: flex;
+	margin-bottom: 5%;
+	margin-left: 15em;
+}
+
+
+.container h2{
+	font-size: 3em;
+	letter-spacing: .5em;
+}
+
+.container h3{
+	font-style: italic;
+}
+
+.container h4{
+	letter-spacing: .25em;
+}
+
+.container p{
+	font-size: 1.5em;
+	width: 15em;
+	margin-right: 2em;
 }
 
 @media screen and (max-width: 600px) {
   .col {
     width: 100%;
   }
+}
+
+/*Formatting the form starts here*/
+.form_container{
+	margin-left: 20%;
+	padding: 10%;
+	/*border-radius: 5%;*/
+	background-color: #e2e2e2;
+}
+
+/*styling the inputs and text areas*/
+input[type=text], textarea{
+	width: 100%
+	padding: 20%;
+	border: 5% #959595;
+	border-radius: 5%;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+/*styling the label to display next to the inputs*/
+label{
+	padding: 0 10% 0 10%;
+	display: inline-block;
+}
+
+/*styling the submit button*/
+input[type=submit]{
+	background-color: #959595;
+	color: #ffffff;
+	padding: 1% 2%;
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+	float: right;
+}
+
+/*styling the first column*/
+.col-1{
+	float: left;
+	width: 25%;
+	margin-top: 5%;
+}
+
+/*styling the second column*/
+.col-2{
+	float: left;
+	width: 75%;
+	margin-top: 5%;
+}
+
+/*clearing floats about the columns*/
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*Responsive form layout*/
+@media screen and (max-width: 600px){
+	.col-2, input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-1{
+		display: none;
+	}
+}
+
+.submit{
+	margin-left: 50%;
+	margin-top: 5%;
+}
+
+/*Formatting the form ends here*/
+
+/*Formatting the footer starts here*/
+.footer {
+	overflow: hidden;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 12px;
+    font-size: 10px;
+    color: #959595;
+    letter-spacing: 1em;
+    text-align: right;
+    display: inline;
+    font-family: helvetica, sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #959595;
 }
