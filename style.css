@@ -115,27 +115,30 @@ body{
 	font-size: 2em;
 	text-transform: uppercase;
 	color: #707070;
-	background: #959595;
+	/*background: #959595;*/
+	background: linear-gradient(to right bottom, grey, black);
 	padding: 2em;
 	font-weight: bold;
 }
 
 .navBar ul li{
-	margin: 7em 0; 
+	margin: 1.5em 0; 
+	list-style: none;
 }
 
 .navBar ul li a{
 	color: #707070;
-	padding: 0 4em;
-	width: 25em;
-	height: 
+	padding: 2em 2em;
+	width: 12em;
+	height: 3em;
 	font-size: 1.25em;
 	text-align: left;
+	float: left;
 }
 
 .navBar ul li a:hover{
-	width: 20em;
-	height: 3em;
+/*	width: 20em;
+	height: 3em;*/
 	color: #ffffff;
 	background: #959595;
 	/*margin-left: 2em;*/
@@ -149,12 +152,77 @@ body{
 .main{
 	margin-left: 20em;
 	padding: 3em;
+	background: linear-gradient(white, grey);
 }
 
-.main h1{
-	margin-top: 8em;
+.unblocker{
+	margin-top: 0;
+	padding: 0;
+	height: 5em;
+	background: #000000;
 }
 
-.blocker{
-	margin-bottom: 8em;
+.intro{
+	padding: 15em 0;
+}
+
+.intro h1{
+	font-size: 10em;
+}
+
+.intro a{
+	/*padding: em 0;*/
+	/*margin: 6em 0;*/
+	font-size: 3em;
+
+	/*background: #000000;*/
+}
+
+.intro a:hover{
+	color: #959595;
+	margin-left: 20em;
+	transition: 4s;
+}
+
+.container{
+	margin: 5em 0;
+	padding: 2em;
+	background: #ffffff;
+	width: 100%
+	height: 100%;
+}
+
+img{
+	width: 30%;
+	height: 30%;
+	margin-right: 0; 
+}
+
+.container img{
+	float: top right;
+	height: 50%;
+	background: #222222;
+}
+
+
+
+.container iframe{
+	
+	height: auto;
+	width: 50%;
+}
+.row{
+	display: flex;
+}
+
+.col{
+	flex: 50%;
+	height: 50%;
+	padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+  }
 }

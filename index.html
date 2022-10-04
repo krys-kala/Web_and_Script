@@ -52,6 +52,7 @@
 <html>
 <head>
 	<title>Assignment 1 - Web & Script</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -59,7 +60,7 @@
 		<h2>MENU</h2>
 		<ul class="nav">
 			<li>
-				<a href="#">
+				<a href="index.html">
 					<span>HOME</span>
 				</a>
 			</li>
@@ -84,28 +85,40 @@
 	<div class="main">
 		<div class="intro">
 			<h1>WELCOME</h1>
-			<a href="#">Click me --> </a>
-			<div id="blocker"></div>
+			<br><br><a href="#about_section">Click me --> </a>
 		</div>
 		
-		<div class="container">
-			<section id="about_section">
-				<div class="unblocker"></div>
-			</section>
-			<h2>ABOUT ME... </h2>
-			<p>Christina Cho</p><br>
-			<p>Student at Ontario Tech University. A wannabe Full Stock Developer. </p><br><br>
-			<p>You can contact me @<a href="instagram.com">Instagram</a></p>
-			
-		</div>
+		<section id="about_section">
+			<div class="unblocker"></div>
+			<div class="container">
+				<h2>ABOUT ME... </h2>
+				<p>Christina Cho</p><br>
+				<p>Student at Ontario Tech University. A wannabe Full Stock Developer. </p><br><br>
+				<p>You can contact me @<a href="instagram.com">Instagram</a></p>
+				<img src="woman.jpg">
+				<iframe src="https://www.youtube.com/embed/yti8i37-1hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</section>
 
-		<div class="container">
-			<section id="project_section">
-				<div class="unblocker"></div>
-			</section>
-			<h2>MILESTONES... </h2>
-			<p>Here are some projects that I have been involved with.</p>
-		</div>
+		<section id="project_section">
+			<div class="unblocker"></div>
+			<div class="container">
+				
+				<h2>MILESTONES... </h2>
+				<p>Here are some projects that I have been involved with.</p>
+
+				<div class="row">
+					<div class="col">
+						<a href="projects.html"><img src="woman.jpg"></a>
+						<h2>Project 1</h2>
+					</div>
+					<div class="col">
+						<a href="projects.html"><img src="woman.jpg"></a>
+						<h2>Project 1</h2>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
