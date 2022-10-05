@@ -25,12 +25,6 @@ header{
 	padding: 2em 10%;
 }
 
-.logo{
-	cursor: pointer;
-	margin-right: auto;
-	display: none;
-}
-
 /*Navigation Bar setup start here*/
 .navBar{
 	overflow: hidden;
@@ -79,10 +73,6 @@ header{
 	color: #ffffff;
 	background: #959595;
 	border-radius: 2em;
-}
-
-.navBar ul li a:active{
-	background: #959595;
 }
 
 /*Navigation Bar setup ends here*/
@@ -166,8 +156,8 @@ header{
 
 /*To have a different font for the column in the about me section*/
 .col p{
-	font-size: 1em;
-	text-align: justify;
+	font-size: 1.5em;
+	text-align: left;
 }
 
 /*TO have a different roll and column setup for the projects section*/
@@ -180,6 +170,7 @@ header{
 	width: 30em;
 	float: left;
 	padding: 2em;
+	resize: vertical;
 }
 
 /*Allowing the image to fall in place*/
@@ -207,7 +198,8 @@ header{
 .col-1 p{
 	font-size: 1.5em;
 	width: 15em;
-	margin-right: 2em;
+	margin-right: .5em;
+	resize: vertical;
 }
 
 /*To give some white space for the social media links*/
@@ -291,6 +283,10 @@ input[type=submit]{
 	.col-1{
 		display: none;
 	}
+	input textarea{
+		width: 8em;
+		padding: 1em;
+	}
 }
 
 /*To give some white space between the form and the submit button*/
@@ -324,18 +320,263 @@ input[type=submit]{
 /*formatting the footer ends here*/
 
 /*Fluid design for tablets*/
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
+	/*Navigation Bar setup start here*/
 	.navBar{
-		display: none;
+		overflow: hidden;
+		position: fixed;
+		background: #e2e2e2;
+		width: 15em;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		display: flex;
+	}
+
+	/*Formats the header "MENU"*/
+	.navBar h2{
+		font-size: 100%;
+		padding: 1em;
+		height: 2em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.navBar ul li{
+		text-align: center;
+		margin-left: .5em; 
+		padding: 0 1em 3em 0;
+		list-style: none;
+		top: 100%;
+		/*float: left;*/
+	}
+
+	.navBar ul li a{
+		transition: all 0.2s ease 0s;
+		color: #707070;
+		padding: 1em 1.5em;
+		width: 7em;
+		margin-left: 1em;
+		height: 1em;
+		font-size: 100%;
+		text-align: left;
+		float: left;
+
+	}
+
+	.navBar ul li a:hover{
+		color: #ffffff;
+		background: #959595;
+		border-radius: 2em;
+	}
+
+	/*Navigation Bar setup ends here*/
+
+
+	/*Main content setup starts here*/
+	.main{
+		margin-left: 15em;
+		padding: 3em;
+		background: linear-gradient(white, grey);
+	}
+
+	/*Separates the different containers*/
+	.unblocker{
+		margin-top: 0;
+		padding: 0;
+		height: .15em;
+		/*background: #000000;*/
+	}
+
+	/*Home page setup starts here*/
+	.intro{
+		overflow: hidden;
+		margin: 2em .25em;
+		width: 100%;
+		height: 100%;
+		padding: 14em 0;
+		border-radius: 2em;
+		background: #ffffff;
+
+	}
+
+	.intro h1{
+		padding: .5em; 
+		/*font-size: 10em;*/
+		font-size: 4em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.intro a{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5em;
+		color: #959595;
+	}
+
+	.intro a:hover{
+		margin-left: 2em;
+		transition: .2s;
+
+	}
+
+	/*Home page setup ends here*/
+
+	/*About me and Projects page setup starts here*/
+	.container{
+		margin: 2em .25em;
+		padding: 7em;
+		background: #ffffff;
+		width: 50em;
+		height: 25.25em;
+		overflow: hidden;
+		border-radius: 2em;
+	}
+
+	.container img{
+		/*float: top;*/
+		width: 100%;
+		height: 100%;
+		/*background: #222222;*/
+	}
+
+	/*to have a different setup for rolls in the about me section*/
+	.row1{
+		display: flex;
+		margin-bottom: 5%;
+		margin-left: 15em;
+	}
+
+	/*To have a different font for the column in the about me section*/
+	.col p{
+		font-size: 0em;
+		text-align: justify;
+	}
+
+	/*TO have a different roll and column setup for the projects section*/
+	.row{
+		display: flex;
+		margin: 5%;
+	}
+
+	.col{
+		width: 30em;
+		float: left;
+		padding: 2em;
+		resize: vertical;
+	}
+
+	/*Allowing the image to fall in place*/
+	.colImage{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/*TO have different fonts sizes modified to fit the needs*/
+	.container h2{
+		font-size: 3em;
+		letter-spacing: .5em;
+	}
+
+	.container h3{
+		font-style: italic;
+	}
+
+	.container h4{
+		letter-spacing: .25em;
+	}
+
+	/*Styling the paragraph tag content*/
+	.col-1 p{
+		font-size: .5em;
+		width: 50%em;
+		margin-right: 50%;
+		resize: vertical;
+	}
+
+	/*To give some white space for the social media links*/
+	.container span{
+		margin-left: 10.5em;
+		text-align: right;
+	}
+
+	.container{
+		width: 100%;
+		height: 100%;
+	}
+
+	.container h2{
+		font-size: 100%;
+	}
+
+
+	.container h3, h4{
+		font-size: 75%;
+	}
+
+	.container span{
+		margin-left: 1em;
 	}
 
 	.col {
     width: 10em;
   	}
+
+  	.col p{
+  		font-size: 50%;
+  	}
+
+  	.col{
+  		padding: 10%;
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		margin-top: 5%;
+		align-items: center;
+	}
+
+	/*Allowing the image to fall in place*/
+	.colImage{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*styling the first column*/
+	.col-1{
+		font-size: 50%;
+		padding: 10%;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-top: 5%;
+		align-items: center;
+	}
+
+	/*styling the second column*/
+	.col-2{
+		float: left;
+		padding: 10%;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-top: 50%;
+		margin-left: 0;
+		align-items: center;
+	}
+	.row1{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /*Fluid design for phones*/
-@media screen and (max-width: 350px){
+@media screen and (max-width: 375px){
 	.logo{
 		display: initial;
 	}
