@@ -6,36 +6,41 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="navBar">
-		<h2>MENU</h2>
-		<ul class="nav">
-			<li>
-				<a href="index.html">
-					<span>HOME</span>
-				</a>
-			</li>
-			<li>
-				<a href="#about_section">
-					<span>ABOUT ME</span>
-				</a>
-			</li>
-			<li>
-				<a href="#project_section">
-					<span>MILESTONES</span>
-				</a>
-			</li>
-			<li>
-				<a href="contactMe.html">
-					<span>CONTACT ME</span>
-				</a>
-			</li>
-		</ul>
-	</div>
+	<header>
+		<img class=logo src="globe.svg" alt="logo">
+		<div class="navBar">
+			<h2>MENU</h2>
+			<ul class="nav">
+				<li>
+					<a href="index.html">
+						<span>HOME</span>
+					</a>
+				</li>
+				<li>
+					<a href="#about_section">
+						<span>ABOUT ME</span>
+					</a>
+				</li>
+				<li>
+					<a href="#project_section">
+						<span>MILESTONES</span>
+					</a>
+				</li>
+				<li>
+					<a href="contactMe.html">
+						<span>CONTACT ME</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a class="cta" href="#"></a>
+	</header>
+	
 
 	<div class="main">
 		<div class="intro">
 			<h1>WELCOME</h1>
-			<br><br><a href="#about_section">Click me </a>
+			<br><a href="#about_section">Click me </a>
 		</div>
 		
 		<section id="about_section">
@@ -68,19 +73,21 @@
 			<div class="unblocker"></div>
 			<div class="container">
 				
-				<h2>MILESTONES... </h2>
+				<h2>MILESTONES... </h2><br>
 				<h4>Here are some projects that I have been involved with...</h4>
 
 				<div class="row">
 					<div class="col">
-						<a href="projects.html"><img src="html_css.jpg"></a>
-						
+						<div class="colImage">
+							<a href="projects.html"><img src="html_css.jpg"></a>
+						</div>
 						<br><br><h3>Project 1</h3><br>
 						<p>This project aims to help Christina to practice the language of HTML and CSS with Javascript. </p>
 					</div>
 					<div class="col">
-						<a href="projects.html"><img src="prosthetics.jpg"></a>
-
+						<div class="colImage">
+							<a href="projects.html"><img src="prosthetics.jpg"></a>
+						</div>
 						<br><br><h3>Project 2</h3><br>
 						<p>This project helps to bring cheaper prosthetics solutions to people who are in needs of prothetics yet unable to afford the price. </p>
 					</div>

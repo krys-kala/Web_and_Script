@@ -18,21 +18,35 @@ body{
 	font-family: arial, helvetica, sans-serif;
 }
 
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 2em 10%;
+}
+
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+	display: none;
+}
+
 /*Navigation Bar setup start here*/
 .navBar{
 	overflow: hidden;
 	position: fixed;
 	background: #e2e2e2;
-	width: 20%;
+	width: 15em;
 	height: 100%;
 	top: 0;
 	left: 0;
 	z-index: 1;
 }
 
+/*Formats the header "MENU"*/
 .navBar h2{
 	text-align: center;
-	font-size: 150%;
+	font-size: 2.75em;
 	text-transform: uppercase;
 	color: #707070;
 	/*background: #959595;*/
@@ -43,63 +57,59 @@ body{
 
 .navBar ul li{
 	text-align: center;
-	margin: 25% 0; 
-	padding: 0 2% 5% 0;
+	margin: 2em 0; 
+	padding: 0 1em 3em 0;
 	list-style: none;
 }
 
 .navBar ul li a{
+	transition: all 0.2s ease 0s;
 	color: #707070;
 	padding: 1em 1.5em;
-	width: 75%;
-	height: 25%;
-	font-size: 120%;
+	width: 7em;
+	margin-left: 1em;
+	height: 1em;
+	font-size: 1.2em;
 	text-align: left;
 	float: left;
+
 }
 
 .navBar ul li a:hover{
-/*	width: 20em;
-	height: 3em;*/
 	color: #ffffff;
 	background: #959595;
 	border-radius: 2em;
-	/*margin-left: 2em;*/
-	/*transition: 0.3s;*/
 }
 
 .navBar ul li a:active{
 	background: #959595;
 }
 
-@media screen and (max-width: 600px){
-	.navBar{
-		display: none;
-	}
-}
 /*Navigation Bar setup ends here*/
 
 
 /*Main content setup starts here*/
 .main{
-	margin-left: 20%;
+	margin-left: 15em;
 	padding: 3em;
 	background: linear-gradient(white, grey);
 }
 
+/*Separates the different containers*/
 .unblocker{
 	margin-top: 0;
 	padding: 0;
-	height: 10%;
+	height: .15em;
 	/*background: #000000;*/
 }
 
+/*Home page setup starts here*/
 .intro{
 	overflow: hidden;
-	margin: 2em 1em;
+	margin: 0 2.5em;
 	height: 12em;
 	width: 64em;
-	padding: 20% 0 20% 0;
+	padding: 14em 0;
 	border-radius: 2em;
 	background: #ffffff;
 
@@ -108,7 +118,7 @@ body{
 .intro h1{
 	padding: .5em; 
 	/*font-size: 10em;*/
-	font-size: 400%;
+	font-size: 4em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -118,13 +128,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*display: inline-block;
-	text-align: center;*/
-	/*margin: 6em 0;*/
-	font-size: 100%;
+	font-size: 1.5em;
 	color: #959595;
-
-	/*background: #000000;*/
 }
 
 .intro a:hover{
@@ -132,29 +137,18 @@ body{
 	transition: .2s;
 }
 
+/*Home page setup ends here*/
+
+/*About me and Projects page setup starts here*/
 .container{
-	margin: 5em 1em;
-	padding: 10%;
+	margin: 5em 2.5em;
+	padding: 7em;
 	background: #ffffff;
-	width: 50.75em;
+	width: 50em;
 	height: 25.25em;
 	overflow: hidden;
 	border-radius: 2em;
 }
-
-.container h2{
-	font-size: 100%;
-}
-
-.container p{
-	font-size: 9em;
-}
-
-/*img{
-	width: 30%;
-	height: 30%;
-	margin-right: 0; 
-}*/
 
 .container img{
 	/*float: top;*/
@@ -163,24 +157,39 @@ body{
 	/*background: #222222;*/
 }
 
-.row{
-	display: flex;
-	margin: 5%;
-}
-
+/*to have a different setup for rolls in the about me section*/
 .row1{
 	display: flex;
 	margin-bottom: 5%;
 	margin-left: 15em;
 }
 
-.col{
-	/*width: 7em;*/
-	float: left;
-	margin-left: 1em;
+/*To have a different font for the column in the about me section*/
+.col p{
+	font-size: 1em;
+	text-align: justify;
 }
 
+/*TO have a different roll and column setup for the projects section*/
+.row{
+	display: flex;
+	margin: 5%;
+}
 
+.col{
+	width: 30em;
+	float: left;
+	padding: 2em;
+}
+
+/*Allowing the image to fall in place*/
+.colImage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*TO have different fonts sizes modified to fit the needs*/
 .container h2{
 	font-size: 3em;
 	letter-spacing: .5em;
@@ -194,22 +203,19 @@ body{
 	letter-spacing: .25em;
 }
 
-.container p{
+/*Styling the paragraph tag content*/
+.col-1 p{
 	font-size: 1.5em;
 	width: 15em;
 	margin-right: 2em;
 }
 
+/*To give some white space for the social media links*/
 .container span{
 	margin-left: 10.5em;
 	text-align: right;
 }
 
-@media screen and (max-width: 600px) {
-  .col {
-    width: 10em;
-  }
-}
 
 /*Formatting the form starts here*/
 .form_container{
@@ -230,6 +236,7 @@ input[type=text], input[type=email]{
 	resize: vertical;
 }
 
+/*Styling the text area for the user to enter their message/comment*/
 input textarea{
 	width: 15em;
 	padding: 1em;
@@ -237,7 +244,7 @@ input textarea{
 
 /*styling the label to display next to the inputs*/
 label{
-	padding: 0 10% 0 10%;
+	padding: 0 1em;
 	display: inline-block;
 }
 
@@ -245,11 +252,12 @@ label{
 input[type=submit]{
 	background-color: #959595;
 	color: #ffffff;
-	padding: 1% 2%;
+	padding: .5em 1em;
 	border: none;
 	border-radius: 2em;
 	cursor: pointer;
 	float: right;
+	transition: all 0.2s ease 0s;
 }
 
 /*styling the first column*/
@@ -257,6 +265,7 @@ input[type=submit]{
 	float: left;
 	width: 25%;
 	margin-top: 5%;
+	vertical-align: text-bottom;
 }
 
 /*styling the second column*/
@@ -284,9 +293,10 @@ input[type=submit]{
 	}
 }
 
+/*To give some white space between the form and the submit button*/
 .submit{
-	margin-left: 50%;
-	margin-top: 5%;
+	margin-left: 20em;
+	margin-top: 2em;
 }
 
 /*Formatting the form ends here*/
@@ -309,4 +319,24 @@ input[type=submit]{
 .footer a {
     text-decoration: none;
     color: #959595;
+}
+
+/*formatting the footer ends here*/
+
+/*Fluid design for tablets*/
+@media screen and (max-width: 700px){
+	.navBar{
+		display: none;
+	}
+
+	.col {
+    width: 10em;
+  	}
+}
+
+/*Fluid design for phones*/
+@media screen and (max-width: 350px){
+	.logo{
+		display: initial;
+	}
 }
